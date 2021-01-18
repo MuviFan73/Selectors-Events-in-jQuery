@@ -1,0 +1,68 @@
+
+<html>
+    <head>
+        <title>39 Events in JQuery</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+        <body>
+            <h2 id="Ih2">Selectors JQuery</h2>
+
+            
+            <button id="btn1">Click me 1!</button>
+            <button id="btn2">Click me 2!</button>
+            
+            <div id="firstdiv" class="mydiv">
+                <p>This is I paragraph in I division</p>
+                <p>This is II paragraph in I division</p>
+            </div>
+            <div id="IIdiv" class="mydiv">
+                <p>This is III paragraph in II division</p>
+            </div>
+
+            <div id="IIIdiv" class="mydiv">
+                <ul>
+                    <li>List item 1</li>
+                    <li>List item 2</li>
+                    <li>List item 3</li>
+                    <li>List item 4</li>
+                    <li>List item 5</li>
+                </ul>
+            </div>    
+            <div id="IIIdiv" class="mydiv">
+                <ul>
+                    <li>List item 1</li>
+                    <li>List item 2</li>
+                    <li>List item 3</li>
+                    <li>List item 4</li>
+                    <li>List item 5</li>
+                </ul>
+            </div>        
+            
+        </body>
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous"></script>
+        <script>
+        $(document).ready(function(){
+
+            // $("button").click(fn1);
+            //$("button").dblclick(fn1);
+
+            $("#btn1").mouseenter(fn1);
+            $("#btn1").mouseleave(fn2);
+
+            $("#btn2").hover(fn1,fn2);
+
+            function fn1()
+            {
+                $("#firstdiv").fadeOut();
+            }
+            function fn2()
+            {
+                $("#firstdiv").fadeIn();
+            }
+        });
+            
+        </script>
+</html>

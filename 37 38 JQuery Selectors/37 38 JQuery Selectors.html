@@ -1,0 +1,42 @@
+
+<html>
+    <head>
+        <title>37 JQuery Selectors  </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+        <body>
+            <h2 id="Ih2">Selectors JQuery</h2>
+            <div id="firstdiv" class="mydiv">
+                <p>This is I paragraph in I division</p>
+                <p>This is II paragraph in I division</p>
+            </div>
+            <div id="IIdiv" class="mydiv">
+                <p>This is III paragraph in II division</p>
+            </div>
+
+            <div id="IIIdiv" class="mydiv">
+                <ul>
+                    <li>List item 1</li>
+                    <li>List item 2</li>
+                    <li>List item 3</li>
+                    <li>List item 4</li>
+                    <li>List item 5</li>
+                </ul>
+            </div>            
+            
+            <button onclick="fn1()">Click me!</button>
+        </body>
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous"></script>
+        <script>
+            function fn1()
+            {
+                $("#Ih2,#firstdiv").fadeToggle();
+                //$("#IIdiv p").fadeToggle();
+                //$("li:even").fadeToggle();
+                //$("access this like in css b4 brackets").fadeToggle();
+            }
+        </script>
+</html>
